@@ -56,7 +56,7 @@ public class Environment extends ColonyView{
                 myEnvNodeList[row][col] = envNode;
                 envNode.setEnvironment(this);
                 this.addColonyNodeView(envNode, row, col);
-                //envNode.setPheromoneLevel(1000);
+
 
 
                 if((row >=12 && row <=14) && (col >= 12 && col <=14)){
@@ -75,6 +75,7 @@ public class Environment extends ColonyView{
                         Queen myQueen = new Queen(envNode);
                         myQueen.ID = 0;
                         envNode.setFoodAmount(1000);
+
                         envNode.addAnt(myQueen);
                         //System.out.println("queen life span " + myQueen.LifeSpan);
 

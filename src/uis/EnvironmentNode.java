@@ -123,6 +123,8 @@ public class EnvironmentNode extends ColonyNodeView{
             this.showBalaIcon();
 
         }
+
+        //Every turn the Scouts ants get updated
         if(scoutRoster.size()>0){
             //System.out.println("Entered show scout function");
 
@@ -145,6 +147,8 @@ public class EnvironmentNode extends ColonyNodeView{
             //System.out.println("hidding SCOUT ==================================");
             this.hideScoutIcon();
         }
+
+        //Every turn the foragers ant get updated
         try{
             if(foragerRoster.size()>0){
                 this.showForagerIcon();
@@ -152,7 +156,17 @@ public class EnvironmentNode extends ColonyNodeView{
 
                 List rosterList = foragerRoster.keyList();
                 for(int i=0; i<rosterList.size(); i++){
+
                     Foragers tempForager = ((Foragers) foragerRoster.get(rosterList.get(i)));
+                    //check for food and that is not the queen node
+                    if(this.foodAmount>0 && (this.hasQueen==false)){
+                        System.out.println("THERE IS FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOD HEERE");
+                        //removes food from node
+                        this.setFoodAmount(this.getFoodAmount()-1);
+                        //sets foragemode off, so ant will return to nest
+                        tempForager.forageMode=false;
+                        tempForager.move();
+                    }
                     tempForager.move();
                     tempForager.LifeSpan = tempForager.getLifeSpan()-1;
 

@@ -110,6 +110,7 @@ public class ColonyNodeView extends JPanel
 
 	public int foodAmount;
 	public int phermoneAmount;
+	public boolean hasQueen;
 	
 	
 	/***************
@@ -340,6 +341,7 @@ public class ColonyNodeView extends JPanel
 	 */
 	public void setQueen(boolean queenPresent)
 	{
+		this.hasQueen=queenPresent;
 		if (queenPresent)
 		{
 			setBackground(QUEEN_NODE_COLOR);
@@ -349,8 +351,11 @@ public class ColonyNodeView extends JPanel
 			setBackground(OPEN_NODE_COLOR);
 		}
 	}
-	
-	
+
+	public boolean getHasQueen() {
+		return hasQueen;
+	}
+
 	/**
 	 *	display the number of foragers in the node represented by this view
 	 *
@@ -404,6 +409,10 @@ public class ColonyNodeView extends JPanel
 	{
 		foodAmount = food;
 		foodLabel.setText("Food: " + foodAmount);
+	}
+
+	public int getFoodAmount(){
+		return foodAmount;
 	}
 	
 	
