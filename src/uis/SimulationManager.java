@@ -22,6 +22,7 @@ public class SimulationManager implements SimulationEventListener, ActionListene
     Environment myEnv;
 
 
+
     //-------------------------------------------------------------------------
     //	Constructors
     //-------------------------------------------------------------------------
@@ -37,6 +38,7 @@ public class SimulationManager implements SimulationEventListener, ActionListene
         //Initialize a Colony View variable
         //ColonyView myColony = new ColonyView(27,27);
         myEnv = new Environment(27,27);
+
 
         gui.addSimulationEventListener(this);
 
@@ -78,7 +80,7 @@ public class SimulationManager implements SimulationEventListener, ActionListene
             simulationOver();
         }
         if(days%10==0){
-            System.out.println("-====================================");
+            //System.out.println("-====================================");
         }
 
     }
@@ -96,8 +98,11 @@ public class SimulationManager implements SimulationEventListener, ActionListene
         {
             // set up initial state of the simulation
             //JOptionPane.showMessageDialog(null, "Normal Setup Event", "Normal Setup", JOptionPane.INFORMATION_MESSAGE);
-            myEnv.startSim();
+            try {
+                myEnv.startSim();
 
+            }
+            catch(Exception e){};
         }
         else if (simEvent.getEventType() == SimulationEvent.QUEEN_TEST_EVENT)
         {

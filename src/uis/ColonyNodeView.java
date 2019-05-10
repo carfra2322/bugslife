@@ -109,6 +109,7 @@ public class ColonyNodeView extends JPanel
 	public String ID;
 
 	public int foodAmount;
+	public int phermoneAmount;
 	
 	
 	/***************
@@ -423,6 +424,8 @@ public class ColonyNodeView extends JPanel
 	 */
 	public void setPheromoneLevel(int pheromone)
 	{
+
+		phermoneAmount = pheromone;
 		
 		pheromoneLabel.setText("Ph: " + pheromone);
 		
@@ -443,8 +446,11 @@ public class ColonyNodeView extends JPanel
 		else
 			setBackground(OPEN_NODE_COLOR);
 	}
-	
-	
+
+	public int getPhermoneAmount() {
+		return phermoneAmount;
+	}
+
 	/**
 	 *	display the queen icon to indicate presence of queen ant
 	 */

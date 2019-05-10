@@ -1,4 +1,6 @@
 package uis;
+import com.sun.tools.javac.Main;
+
 import java.util.*;
 /**
  * This is the class that will be creating a list of Environment nodes
@@ -20,6 +22,7 @@ public class Environment extends ColonyView{
     Ant newAnt;
     EnvironmentNode myQueenNode;
     int AntID;
+    boolean firstPass;
 
 
 
@@ -33,6 +36,7 @@ public class Environment extends ColonyView{
     public Environment(int colonyHeight, int colonyWidth) {
         super(colonyHeight, colonyWidth);
         myEnvNodeList = new EnvironmentNode[27][27];
+        firstPass = false;
 
     }
 
@@ -52,6 +56,7 @@ public class Environment extends ColonyView{
                 myEnvNodeList[row][col] = envNode;
                 envNode.setEnvironment(this);
                 this.addColonyNodeView(envNode, row, col);
+                //envNode.setPheromoneLevel(1000);
 
 
                 if((row >=12 && row <=14) && (col >= 12 && col <=14)){
@@ -71,7 +76,7 @@ public class Environment extends ColonyView{
                         myQueen.ID = 0;
                         envNode.setFoodAmount(1000);
                         envNode.addAnt(myQueen);
-                        System.out.println("queen life span " + myQueen.LifeSpan);
+                        //System.out.println("queen life span " + myQueen.LifeSpan);
 
 ;
 
@@ -79,21 +84,21 @@ public class Environment extends ColonyView{
                         for(i=0; i<64; i++){
                             //4 scout ants
                             if(i<4){
-                                System.out.println("Adding " + (i+1) + " scout ants ");
+                                //System.out.println("Adding " + (i+1) + " scout ants ");
                                 Scouts myScout = new Scouts(envNode);
                                 myScout.ID = i;
                                 envNode.addAnt(myScout);
                             }
                             //10 soldier ants
                             if(i>3 && i < 14){
-                                System.out.println("Adding " + (i+1) + " soldier ants ");
+                                //System.out.println("Adding " + (i+1) + " soldier ants ");
                                 Soldier mySoldier = new Soldier(envNode);
                                 mySoldier.ID = i;
                                 envNode.addAnt(mySoldier);
                             }
                             //50 forager ants
                             if(i>13 && i<64){
-                                System.out.println("adding " + (i+1) + " forager ants");
+                                //System.out.println("adding " + (i+1) + " forager ants");
                                 Foragers myForager = new Foragers(envNode);
                                 myForager.ID = i;
                                 envNode.addAnt(myForager);
@@ -103,8 +108,8 @@ public class Environment extends ColonyView{
                             myQueen.setIDcount(i);
                         }
 
-                        System.out.println("ID of the square " + envNode.getID().substring(0,2));
-                        envNode.updateEnvNode();
+                        //System.out.println("ID of the square " + envNode.getID().substring(0,2));
+                        //envNode.updateEnvNode();
 
 
                     }
@@ -121,12 +126,24 @@ public class Environment extends ColonyView{
 
 
     public void turnUpdate(){
-        System.out.println("turn has passed");
+        //System.out.println("turn has passed");
+
+
+
+        myQueenNode.updateEnvNode();
+        if(firstPass==false) {
+            try {
+                MainDriver.myThread.sleep(100);
+            }
+            catch(Exception e){}
+             firstPass= true;
+        }
+
         checkQueenLife();
         myQueenNode.myQueen.LifeSpan--;
         myQueenNode.myQueen.eat();
         myQueenNode.myQueen.hatch();
-        myQueenNode.updateEnvNode();
+
 
         //Going to have to change this to iterate through all the visible nodes to get them updated.
         for (int row =0; row < 27; row++){

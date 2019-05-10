@@ -54,7 +54,8 @@ public class EnvironmentNode extends ColonyNodeView{
      * */
     public void addAnt(Ant myAnt){
 
-        System.out.println("Entering AddAnt function");
+        //System.out.println("Entering AddAnt function");
+
 
 
         if(myAnt.getClass().getSimpleName().compareTo("Foragers")==0){
@@ -79,10 +80,12 @@ public class EnvironmentNode extends ColonyNodeView{
 
 
 
-        System.out.println("Forager roster size " + foragerRoster.size());
-        System.out.println("Scout roster size " + scoutRoster.size());
-        System.out.println("soldier roster size " + soldierRoster.size());
-        System.out.println("Bala roster size " + balaRoster.size());
+
+
+        //System.out.println("Forager roster size " + foragerRoster.size());
+        //System.out.println("Scout roster size " + scoutRoster.size());
+        //System.out.println("soldier roster size " + soldierRoster.size());
+        //System.out.println("Bala roster size " + balaRoster.size());
 
 
 
@@ -121,32 +124,56 @@ public class EnvironmentNode extends ColonyNodeView{
 
         }
         if(scoutRoster.size()>0){
-            System.out.println("Entered show scout function");
-            this.showScoutIcon();
+            //System.out.println("Entered show scout function");
+
             List rosterList = scoutRoster.keyList();
             for(int i=0; i<scoutRoster.size(); i++){
-                ((Scouts) scoutRoster.get(rosterList.get(i))).move();
-                System.out.println("Entered show scout loop");
+                Scouts tempScout = ((Scouts) scoutRoster.get(rosterList.get(i)));
+                tempScout.move();
+                tempScout.LifeSpan = tempScout.getLifeSpan()-1;
+
+                if(tempScout.getLifeSpan()<1){
+                    this.removeAnt(tempScout);
+                }
 
             }
+            this.showScoutIcon();
+            this.showNode();
 
         }
-        else{
+        else if (scoutRoster.size()==0){
+            //System.out.println("hidding SCOUT ==================================");
             this.hideScoutIcon();
         }
-        if(foragerRoster.size()>0){
-            this.showForagerIcon();
-            System.out.println("Entered show forager function");
-            List rosterList = foragerRoster.keyList();
-            for(int i=0; i<rosterList.size(); i++){
-                ((Foragers) foragerRoster.get(rosterList.get(i))).move();
+        try{
+            if(foragerRoster.size()>0){
+                this.showForagerIcon();
+                System.out.println("Entered show forager function");
+
+                List rosterList = foragerRoster.keyList();
+                for(int i=0; i<rosterList.size(); i++){
+                    Foragers tempForager = ((Foragers) foragerRoster.get(rosterList.get(i)));
+                    tempForager.move();
+                    tempForager.LifeSpan = tempForager.getLifeSpan()-1;
+
+                    if(tempForager.getLifeSpan()<1){
+                        this.removeAnt(tempForager);
+                    }
+
+                }
 
             }
-
+            else if (foragerRoster.size()==0){
+                System.out.println("hidding FORAGER ==================================");
+                this.hideForagerIcon();
+            }
         }
+        catch(Exception e){};
+
+
         if(soldierRoster.size()>0){
             this.showSoldierIcon();
-            System.out.println("Entered show soldiers function");
+            //System.out.println("Entered show soldiers function");
         }
 //        if(myQueen.Alive){
 //            this.showQueenIcon();

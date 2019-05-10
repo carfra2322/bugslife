@@ -22,6 +22,7 @@ public class Ant {
         //365 days * 10 will give us lifespan in turns
         this.currentLocation = envNode;
         LifeSpan = 365 * 10;
+        //LifeSpan = 100;
         Alive = true;
 
     }

@@ -3,6 +3,7 @@ package uis;
 public class Queen extends Ant {
 
     int IDcount;
+    int hatchProbability;
 
 
 
@@ -17,7 +18,6 @@ public class Queen extends Ant {
         IDcount = 0;
 
 
-
     }
 
     //-------------------------------------------------------------------------
@@ -28,14 +28,21 @@ public class Queen extends Ant {
     //hatches new ant
     public void hatch(){
 
-        //Foragers myForager = new Foragers(currentLocation);
-        //myForager.ID = getIDcount()+1;
-        //currentLocation.addAnt(myForager);
 
-        Scouts myScout = new Scouts(currentLocation);
-        myScout.ID = getIDcount()+1;
-        currentLocation.addAnt(myScout);
 
+        hatchProbability = MainDriver.rand.nextInt(100);
+        if(hatchProbability<=49)
+        {
+            Foragers myForager = new Foragers(currentLocation);
+            myForager.ID = getIDcount()+1;
+            currentLocation.addAnt(myForager);
+        }
+
+        if(hatchProbability>49 && hatchProbability<74) {
+            Scouts myScout = new Scouts(currentLocation);
+            myScout.ID = getIDcount() + 1;
+            currentLocation.addAnt(myScout);
+        }
 
         setIDcount(getIDcount()+1);
 
