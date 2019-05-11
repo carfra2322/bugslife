@@ -25,6 +25,7 @@ public class EnvironmentNode extends ColonyNodeView{
     int row;
     int col;
     Environment environment;
+    int BalaProbability;
 
 
 
@@ -119,6 +120,8 @@ public class EnvironmentNode extends ColonyNodeView{
         //this.showBalaIcon();
 
 
+
+
         if(balaRoster.size()>0){
             this.showBalaIcon();
 
@@ -128,9 +131,9 @@ public class EnvironmentNode extends ColonyNodeView{
         if(scoutRoster.size()>0){
             //System.out.println("Entered show scout function");
 
-            List rosterList = scoutRoster.keyList();
+            List scoutrosterList = scoutRoster.keyList();
             for(int i=0; i<scoutRoster.size(); i++){
-                Scouts tempScout = ((Scouts) scoutRoster.get(rosterList.get(i)));
+                Scouts tempScout = ((Scouts) scoutRoster.get(scoutrosterList.get(i)));
                 tempScout.move();
                 tempScout.LifeSpan = tempScout.getLifeSpan()-1;
 
@@ -148,29 +151,36 @@ public class EnvironmentNode extends ColonyNodeView{
             this.hideScoutIcon();
         }
 
-        //Every turn the foragers ant get updated
+        /**
+         * FORAGER MOVEMENT UPDATE
+         * */
         try{
+            //If there are any foragers ants then it enters this piece of code
             if(foragerRoster.size()>0){
                 this.showForagerIcon();
                 System.out.println("Entered show forager function");
+                //for every Forager ant in the roster
+                List foragerrosterList = foragerRoster.keyList();
+                for(int i=0; i<foragerrosterList.size(); i++){
 
-                List rosterList = foragerRoster.keyList();
-                for(int i=0; i<rosterList.size(); i++){
-
-                    Foragers tempForager = ((Foragers) foragerRoster.get(rosterList.get(i)));
+                    Foragers tempForager = ((Foragers) foragerRoster.get(foragerrosterList.get(i)));
                     //check for food and that is not the queen node
-                    if(this.foodAmount>0 && (this.hasQueen==false)){
+                    if(this.foodAmount>0 && (this.hasQueen==false))
+                    {
                         System.out.println("THERE IS FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOD HEERE");
                         //removes food from node
                         this.setFoodAmount(this.getFoodAmount()-1);
                         //sets foragemode off, so ant will return to nest
                         tempForager.forageMode=false;
                         tempForager.move();
+
                     }
+
                     tempForager.move();
                     tempForager.LifeSpan = tempForager.getLifeSpan()-1;
 
-                    if(tempForager.getLifeSpan()<1){
+                    if(tempForager.getLifeSpan()<1)
+                    {
                         this.removeAnt(tempForager);
                     }
 
@@ -183,12 +193,77 @@ public class EnvironmentNode extends ColonyNodeView{
             }
         }
         catch(Exception e){};
+        /**
+         * END FORAGER MOVEMENT UPDATE
+         * */
 
-
+        /**
+         * SOLDIER MOVEMENT UPDATE
+         * */
         if(soldierRoster.size()>0){
             this.showSoldierIcon();
+            //for every Soldier ant in the roster
+            List soldierrosterList = soldierRoster.keyList();
+            for(int i=0; i<soldierrosterList.size(); i++){
+
+                Soldier tempSoldier = ((Soldier) soldierRoster.get(soldierrosterList.get(i)));
+                tempSoldier.move();
+                tempSoldier.LifeSpan = tempSoldier.getLifeSpan()-1;
+
+                if(tempSoldier.getLifeSpan()<1)
+                {
+                    this.removeAnt(tempSoldier);
+                }
+
+            }
+
             //System.out.println("Entered show soldiers function");
         }
+        else if (soldierRoster.size()==0){
+
+            this.hideSoldierIcon();
+        }
+
+        /**
+         * END FORAGER MOVEMENT UPDATE
+         * */
+
+        /**
+         * BALA MOVEMENT UPDATE
+         * */
+        if(balaRoster.size()>0){
+            this.showBalaIcon();
+            //for every Bala ant in the roster
+            List balarosterList = balaRoster.keyList();
+            for(int i=0; i<balarosterList.size(); i++)
+            {
+                Bala tempBala = ((Bala) balaRoster.get(balarosterList.get(i)));
+                tempBala.move();
+                tempBala.LifeSpan = tempBala.getLifeSpan()-1;
+
+                if(tempBala.getLifeSpan()<1)
+                {
+                    this.removeAnt(tempBala);
+                }
+
+            }
+
+        }
+        else if (balaRoster.size()==0){
+
+            this.hideBalaIcon();
+        }
+
+
+        /**
+         * END BALA MOVEMENT UPDATE
+         * */
+
+
+
+
+
+
 //        if(myQueen.Alive){
 //            this.showQueenIcon();
 //            this.setQueen(true);

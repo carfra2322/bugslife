@@ -111,6 +111,7 @@ public class ColonyNodeView extends JPanel
 	public int foodAmount;
 	public int phermoneAmount;
 	public boolean hasQueen;
+	public boolean hasBala;
 	
 	
 	/***************
@@ -483,6 +484,7 @@ public class ColonyNodeView extends JPanel
 	 */
 	public void showBalaIcon()
 	{
+		hasBala = true;
 		balaIcon.setVisible(true);
 	}
 	
@@ -492,8 +494,11 @@ public class ColonyNodeView extends JPanel
 	 */
 	public void hideBalaIcon()
 	{
+		hasBala = false;
 		balaIcon.setVisible(false);
 	}
+
+
 	
 	
 	/**

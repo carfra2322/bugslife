@@ -11,6 +11,8 @@ public class Foragers extends Ant {
    LinkedStack movementHistory;
    ColonyNodeView lastLocation;
    ArrayList neighbors;
+   int sameSpot;
+   int countFood;
 
 
     //-------------------------------------------------------------------------
@@ -25,6 +27,8 @@ public class Foragers extends Ant {
         //All ants must come back to the queen node where they originated from
         movementHistory.add(currentLocation.environment.myQueenNode);
         forageMode = true;
+        sameSpot = 0;
+        countFood = 0;
     }
 
 
@@ -34,6 +38,11 @@ public class Foragers extends Ant {
 
     public void move()
     {
+        if((currentLocation.hasQueen)){
+            forageMode=true;
+            movementHistory.clear();
+            lastLocation = currentLocation.environment.myQueenNode;
+        }
         neighbors = currentLocation.getEnvironment().getNeighborNodes(currentLocation);
         int size = neighbors.size();
         int temp =0;
@@ -44,28 +53,39 @@ public class Foragers extends Ant {
                 neighbors.remove(i);
             }
         }
-        size = neighbors.size();
+        if(currentLocation.ID.compareTo(lastLocation.ID)==0){
+            sameSpot++;
+        }
+
+        if(sameSpot>2){
+            currentLocation.removeAnt(this);
+            currentLocation = (EnvironmentNode) neighbors.get(MainDriver.rand.nextInt(neighbors.size()));
+            currentLocation.addAnt(this);
+            movementHistory.add(currentLocation);
+        }
+
         //We want to validate the neighbor node with the highest phermone amount
         // Change will monitor if there is actually a difference between all neighbors
-        int change = 0;
+        boolean change = false;
 
-        for(int i=0; i<size; i++){
+        for(int i=0; i<neighbors.size(); i++){
             int newTemp = ((EnvironmentNode) neighbors.get(i)).getPhermoneAmount();
             if(newTemp>temp){
                 highest = newTemp;
-                change++;
+                change=true;
             }
             temp=newTemp;
         }
         /**
          * FORAGE MODE
          * */
-        if(this.forageMode) {
+        if(forageMode) {
             //if phermone levels are the same then randomly move
-            if (change == 0) {
+            if (!change) {
                 System.out.println("NO CHANGEEEEEE ==========================================================>");
                 int neighborsize = MainDriver.rand.nextInt(neighbors.size());
                 currentLocation.removeAnt(this);
+                lastLocation = currentLocation;
                 currentLocation = (EnvironmentNode) neighbors.get(neighborsize);
                 currentLocation.addAnt(this);
                 //Add movement node to movement history
@@ -73,46 +93,69 @@ public class Foragers extends Ant {
 
             }
             //if there is a difference in the phermone levels then pick the highest phermone level node
-            if (change > 0) {
+            else if (change) {
                 EnvironmentNode newLocation = ((EnvironmentNode) neighbors.get(highest));
                 currentLocation.removeAnt(this);
-                //Move to new location
-                if (newLocation.getID() != lastLocation.getID()) {
-                    currentLocation = newLocation;
-                } else {
-                    currentLocation = ((EnvironmentNode) neighbors.get(highest - 1));
+                lastLocation = currentLocation;
+
+                for(int i=neighbors.size(); i>0; i--)
+                {
+                    if (newLocation.getID() != lastLocation.getID()) {
+                        currentLocation = newLocation;
+                        break;
+                    }
+                    else{
+
+                        newLocation = ((EnvironmentNode) neighbors.get(i));
+
+
+                    }
                 }
-                ;
 
                 currentLocation.addAnt(this);
                 movementHistory.add(currentLocation);
 
             }
-            /**
-             * FORAGE MODE ENDS
-             * RETURN TO NEST MODE BEGINS
-             * */
-            if(!this.forageMode){
-
-                System.out.println("=====================================================RETURN TO NEST MODE ON ");
-                //Checks if it is queen node
-                if(currentLocation.getHasQueen()==false) {
-                    currentLocation.removeAnt(this);
-                    //removes last history node which is where we are
-                    movementHistory.pop();
-                    //sets current location to the past history node before the current one
-                    currentLocation = (EnvironmentNode) movementHistory.pop();
-                    currentLocation.addAnt(this);
-                }
-                //if it is a queen node
-                //Then drop the food and go back to forage mode
-                else{
-                    currentLocation.setFoodAmount((currentLocation.getFoodAmount())+1);
-                    setForageMode(true);
-                }
-            }
         }
+        /**
+         * FORAGE MODE ENDS
+         * RETURN TO NEST MODE BEGINS
+         * */
 
+        if(forageMode==false)
+        {
+
+            System.out.println("=====================================================SI ENTRA AQUI" + countFood);
+            //Checks if it is queen node
+            if(currentLocation.getHasQueen()==false)
+            {
+                if(currentLocation.phermoneAmount < 1000)
+                {
+                    currentLocation.setPheromoneLevel(currentLocation.getPhermoneAmount() + 10);
+                }
+                currentLocation.removeAnt(this);
+                lastLocation = currentLocation;
+                currentLocation = (EnvironmentNode) movementHistory.pop();
+                if(currentLocation.foodAmount>0) {
+                    countFood = countFood + 1;
+                    System.out.println("=====================================================SI ENTRA AQUI KAREN" + countFood);
+                }
+                currentLocation.addAnt(this);
+            }
+            //if it is a queen node
+            //Then drop the food and go back to forage mode
+            else if(currentLocation.hasQueen==true)
+                {
+                    System.out.println("=====================================================FOOD BACK TO QUEEEEENIE EL CONTEO DE COMIDA ES ESTEEEEEEEE FROY" + countFood);
+                    currentLocation.environment.myQueenNode.setFoodAmount((currentLocation.getFoodAmount())+countFood);
+
+                    this.setForageMode(true);
+                    movementHistory.clear();
+                    //movementHistory.add(currentLocation.environment.myQueenNode);
+                    sameSpot=0;
+
+                }
+        }
     }
 
     public LinkedStack getMovementHistory() {

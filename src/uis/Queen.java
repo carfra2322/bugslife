@@ -13,8 +13,8 @@ public class Queen extends Ant {
     //-------------------------------------------------------------------------
     public Queen(EnvironmentNode envNode) {
         super(envNode);
-        //LifeSpan = LifeSpan*20;
-        LifeSpan = LifeSpan/10;
+        LifeSpan = LifeSpan*20;
+        //LifeSpan = LifeSpan/10;
         IDcount = 0;
 
 
@@ -38,10 +38,23 @@ public class Queen extends Ant {
             currentLocation.addAnt(myForager);
         }
 
-        if(hatchProbability>49 && hatchProbability<74) {
+        else if(hatchProbability>49 && hatchProbability<74) {
             Scouts myScout = new Scouts(currentLocation);
             myScout.ID = getIDcount() + 1;
             currentLocation.addAnt(myScout);
+        }
+        else if(hatchProbability>74){
+            Soldier mySoldier = new Soldier(currentLocation);
+            mySoldier.ID = getIDcount() + 1;
+            currentLocation.addAnt(mySoldier);
+        }
+        if(hatchProbability<3){
+
+            Bala myBala = new Bala(currentLocation.environment.myEnvNodeList[0][0]);
+            myBala.ID = getIDcount() + 1;
+            //myBala.currentLocation.addAnt(myBala);
+            (currentLocation.environment.myEnvNodeList[0][0]).addAnt(myBala);
+
         }
 
         setIDcount(getIDcount()+1);
