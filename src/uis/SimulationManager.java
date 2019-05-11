@@ -126,7 +126,7 @@ public class SimulationManager implements SimulationEventListener, ActionListene
         }
         else if (simEvent.getEventType() == SimulationEvent.RUN_EVENT)
         {
-            swingTimer = new Timer(100, this);
+            swingTimer = new Timer(300, this);
             swingTimer.start();
 
         }

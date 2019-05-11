@@ -28,9 +28,6 @@ public class Soldier extends Ant {
 
     };
 
-    public void attack(){
-
-    };
 
     public void move()
     {
@@ -62,6 +59,27 @@ public class Soldier extends Ant {
                 currentLocation.addAnt(this);
             }
         }
+        if(currentLocation.balaRoster.size() > 0)
+        {
+            attack();
+        }
+
+    }
+
+
+    public void attack(){
+        if (MainDriver.rand.nextInt(100) > 49) {
+            try {
+                List balaList = currentLocation.balaRoster.keyList();
+                Bala mytempBala = ((Bala) balaList.get(0));
+
+                currentLocation.removeAnt(mytempBala);
+                balaList.remove(0);
+            } catch (Exception e) {
+
+            }
+        }
 
     };
+
 }

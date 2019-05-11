@@ -2,79 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="278d5240-c556-49f5-ad24-5879f9435df2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/META-INF/Project.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Ant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Ant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI$ControlPanel$ButtonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI$ControlPanel$ButtonHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI$ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI$ControlPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/AntSimGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ArrayList$ArrayListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ArrayList$ArrayListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ArrayList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Bala.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Bala.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/BinaryHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/BinaryHeap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/BinaryMaxHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/BinaryMaxHeap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/BinaryMinHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/BinaryMinHeap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/CapacityExceededException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/CapacityExceededException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Collection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Collection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ColonyNodeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ColonyNodeView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ColonyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ColonyView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ConcurrentModificationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ConcurrentModificationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/DefaultHashFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/DefaultHashFunction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Environment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Environment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/EnvironmentNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/EnvironmentNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/EnvironmentNodeCopy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/EnvironmentNodeCopy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Foragers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Foragers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/GraphException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/GraphException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/HashFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/HashFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/HashMap$HashMapEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/HashMap$HashMapEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/HashMap$HashMapIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/HashMap$HashMapIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/HashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/HashMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Iterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Iterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/LinkedList$LinkedListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/LinkedList$LinkedListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/LinkedList$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/LinkedList$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/LinkedQueue$QueueNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/LinkedQueue$QueueNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/LinkedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/LinkedQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/LinkedStack$StackNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/LinkedStack$StackNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/LinkedStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/LinkedStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ListGraph$Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ListGraph$Edge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ListGraph$Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ListGraph$Path.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ListGraph$Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ListGraph$Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ListGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ListGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/MainDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/MainDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/MapIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/MapIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/NoSuchElementException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/NoSuchElementException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/OrderedCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/OrderedCollection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/PriorityQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/PriorityQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Queen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Queue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Scouts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Scouts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/ShortestPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/ShortestPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/SimTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/SimTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/SimulationEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/SimulationEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/SimulationEventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/SimulationEventListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/SimulationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/SimulationManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Soldier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Soldier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/Stack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/TraversableCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/TraversableCollection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/UnderflowException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/UnderflowException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/images/bala.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/images/bala.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/images/forager.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/images/forager.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/images/queen.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/images/queen.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/images/scout.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/images/scout.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/images/soldier.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/images/soldier.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/uis/testing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/uis/testing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uis/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/Ant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uis/Bala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/Bala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uis/ColonyNodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/ColonyNodeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uis/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uis/EnvironmentNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/EnvironmentNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uis/Foragers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/Foragers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uis/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uis/Scouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/Scouts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uis/SimulationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/SimulationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uis/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uis/Soldier.java" afterDir="false" />
     </list>
@@ -95,25 +37,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uis/Environment.java">
+        <entry file="file://$PROJECT_DIR$/src/uis/EnvironmentNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+            <state relative-caret-position="1011">
+              <caret line="245" selection-start-line="245" selection-end-line="245" />
+              <folding>
+                <element signature="e#6982#6983#0" expanded="true" />
+                <element signature="e#7035#7036#0" expanded="true" />
+                <element signature="e#7112#7113#0" expanded="true" />
+                <element signature="e#7217#7218#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uis/EnvironmentNode.java">
+        <entry file="file://$PROJECT_DIR$/src/uis/Environment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="240" selection-start-line="240" selection-end-line="240" />
-              <folding>
-                <element signature="e#8078#8079#0" expanded="true" />
-                <element signature="e#8131#8132#0" expanded="true" />
-                <element signature="e#8208#8209#0" expanded="true" />
-                <element signature="e#8313#8314#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-444">
+              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
             </state>
           </provider>
         </entry>
@@ -121,13 +63,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uis/Foragers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="133" column="47" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="47" />
+            <state relative-caret-position="-459">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
-                <element signature="e#5960#5961#0" expanded="true" />
-                <element signature="e#6081#6082#0" expanded="true" />
-                <element signature="e#6379#6380#0" expanded="true" />
-                <element signature="e#6476#6477#0" expanded="true" />
+                <element signature="e#5436#5437#0" expanded="true" />
+                <element signature="e#5557#5558#0" expanded="true" />
+                <element signature="e#5855#5856#0" expanded="true" />
+                <element signature="e#5952#5953#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,17 +78,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uis/Ant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="645">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uis/Bala.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="78" column="72" lean-forward="true" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
+            <state relative-caret-position="75">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#269#270#0" expanded="true" />
                 <element signature="e#299#300#0" expanded="true" />
@@ -156,10 +98,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventQueue.java">
+        <entry file="file://$PROJECT_DIR$/src/uis/Soldier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="714" selection-start-line="714" selection-end-line="714" />
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -167,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uis/Scouts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+            <state relative-caret-position="202">
+              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -176,33 +118,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uis/Queen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+            <state relative-caret-position="232">
+              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/uis/SimulationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="128" column="38" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+            <state relative-caret-position="351">
+              <caret line="132" column="71" lean-forward="true" selection-start-line="132" selection-start-column="71" selection-end-line="132" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uis/ColonyNodeView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="492" column="24" selection-start-line="492" selection-start-column="24" selection-end-line="492" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9512#9513#0" expanded="true" />
-                <element signature="e#9534#9535#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,13 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setph</find>
-      <find>phh</find>
-      <find>setforage</find>
-      <find>queen</find>
-      <find>getnei</find>
-      <find>return</find>
-      <find>foragemode</find>
       <find>RETURN</find>
       <find>THERE</find>
       <find>RETURN</find>
@@ -246,9 +167,16 @@
       <find>nodelist</find>
       <find>current</find>
       <find>pheromone</find>
+      <find>pheromon</find>
       <find>curren</find>
       <find>queenroster</find>
-      <find>pheromon</find>
+      <find>System.ou</find>
+      <find>Syste</find>
+      <find>syst</find>
+      <find>system.out</find>
+      <find>System.out</find>
+      <find>system.</find>
+      <find>system</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -294,18 +222,18 @@
         <option value="$PROJECT_DIR$/src/uis/AntSimGUI.java" />
         <option value="$PROJECT_DIR$/src/uis/ArrayList.java" />
         <option value="$PROJECT_DIR$/src/uis/MainDriver.java" />
-        <option value="$PROJECT_DIR$/src/uis/Ant.java" />
         <option value="$PROJECT_DIR$/src/uis/LinkedStack.java" />
         <option value="$PROJECT_DIR$/src/uis/testing.java" />
-        <option value="$PROJECT_DIR$/src/uis/Scouts.java" />
-        <option value="$PROJECT_DIR$/src/uis/Environment.java" />
         <option value="$PROJECT_DIR$/src/uis/ColonyNodeView.java" />
         <option value="$PROJECT_DIR$/src/uis/Soldier.java" />
-        <option value="$PROJECT_DIR$/src/uis/SimulationManager.java" />
-        <option value="$PROJECT_DIR$/src/uis/Foragers.java" />
         <option value="$PROJECT_DIR$/src/uis/EnvironmentNode.java" />
-        <option value="$PROJECT_DIR$/src/uis/Queen.java" />
+        <option value="$PROJECT_DIR$/src/uis/Foragers.java" />
+        <option value="$PROJECT_DIR$/src/uis/Ant.java" />
         <option value="$PROJECT_DIR$/src/uis/Bala.java" />
+        <option value="$PROJECT_DIR$/src/uis/Scouts.java" />
+        <option value="$PROJECT_DIR$/src/uis/Environment.java" />
+        <option value="$PROJECT_DIR$/src/uis/Queen.java" />
+        <option value="$PROJECT_DIR$/src/uis/SimulationManager.java" />
       </list>
     </option>
   </component>
@@ -351,7 +279,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557552647235" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557554651393" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -460,12 +388,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556672435048</updated>
       <workItem from="1556672436378" duration="118129000" />
-      <workItem from="1557526228124" duration="18477000" />
+      <workItem from="1557526228124" duration="20236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136606000" />
+    <option name="totallyTimeSpent" value="138365000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -758,45 +686,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/Soldier.java">
+    <entry file="file://$PROJECT_DIR$/src/uis/Foragers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+        <state relative-caret-position="-459">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#5436#5437#0" expanded="true" />
+            <element signature="e#5557#5558#0" expanded="true" />
+            <element signature="e#5855#5856#0" expanded="true" />
+            <element signature="e#5952#5953#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uis/Ant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/SimulationManager.java">
+    <entry file="file://$PROJECT_DIR$/src/uis/Bala.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="128" column="38" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+        <state relative-caret-position="75">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/ColonyNodeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="492" column="24" selection-start-line="492" selection-start-column="24" selection-end-line="492" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9512#9513#0" expanded="true" />
-            <element signature="e#9534#9535#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -808,53 +724,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/Scouts.java">
+    <entry file="file://$PROJECT_DIR$/src/uis/Soldier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/EnvironmentNode.java">
+    <entry file="file://$PROJECT_DIR$/src/uis/Scouts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uis/ColonyNodeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="492" column="51" selection-start-line="492" selection-start-column="51" selection-end-line="492" selection-end-column="51" />
           <folding>
-            <element signature="e#8078#8079#0" expanded="true" />
-            <element signature="e#8131#8132#0" expanded="true" />
-            <element signature="e#8208#8209#0" expanded="true" />
-            <element signature="e#8313#8314#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#9512#9513#0" expanded="true" />
+            <element signature="e#9534#9535#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uis/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uis/Queen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        <state relative-caret-position="232">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/Foragers.java">
+    <entry file="file://$PROJECT_DIR$/src/uis/EnvironmentNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="133" column="47" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="47" />
+        <state relative-caret-position="1011">
+          <caret line="245" selection-start-line="245" selection-end-line="245" />
           <folding>
-            <element signature="e#5960#5961#0" expanded="true" />
-            <element signature="e#6081#6082#0" expanded="true" />
-            <element signature="e#6379#6380#0" expanded="true" />
-            <element signature="e#6476#6477#0" expanded="true" />
+            <element signature="e#6982#6983#0" expanded="true" />
+            <element signature="e#7035#7036#0" expanded="true" />
+            <element signature="e#7112#7113#0" expanded="true" />
+            <element signature="e#7217#7218#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uis/Bala.java">
+    <entry file="file://$PROJECT_DIR$/src/uis/SimulationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="78" column="72" lean-forward="true" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
+        <state relative-caret-position="351">
+          <caret line="132" column="71" lean-forward="true" selection-start-line="132" selection-start-column="71" selection-end-line="132" selection-end-column="71" />
           <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -42,9 +42,7 @@ public class Scouts extends Ant {
         ArrayList neighbors = currentLocation.getEnvironment().getNeighborNodes(currentLocation);
 
         int size = MainDriver.rand.nextInt(neighbors.size());
-        //System.out.println("Size of neighbors " + size);
 
-        //System.out.println("New neighboring number is " + Math.random());
         currentLocation.removeAnt(this);
         currentLocation = (EnvironmentNode ) neighbors.get(size);
 

@@ -49,8 +49,6 @@ public class Environment extends ColonyView{
 
         for (int row =0; row < 27; row++){
             for(int col=0; col < 27; col++){
-                //System.out.println("Row: " + row + " Column: " + col);
-                //ColonyNodeView myTempNode = new ColonyNodeView();
                 EnvironmentNode envNode = new EnvironmentNode(row, col);
                 envNode.setID(row + " , " + col);
                 myEnvNodeList[row][col] = envNode;
@@ -60,7 +58,6 @@ public class Environment extends ColonyView{
 
 
                 if((row >=12 && row <=14) && (col >= 12 && col <=14)){
-                    System.out.println("Row: " + row + " Column: " + col);
                     envNode.showNode();
                     /**
                      * Sets the middle node with the initial state requirements
@@ -77,7 +74,7 @@ public class Environment extends ColonyView{
                         envNode.setFoodAmount(1000);
 
                         envNode.addAnt(myQueen);
-                        //System.out.println("queen life span " + myQueen.LifeSpan);
+
 
 ;
 
@@ -85,21 +82,21 @@ public class Environment extends ColonyView{
                         for(i=0; i<64; i++){
                             //4 scout ants
                             if(i<4){
-                                //System.out.println("Adding " + (i+1) + " scout ants ");
+
                                 Scouts myScout = new Scouts(envNode);
                                 myScout.ID = i;
                                 envNode.addAnt(myScout);
                             }
                             //10 soldier ants
                             if(i>3 && i < 14){
-                                //System.out.println("Adding " + (i+1) + " soldier ants ");
+
                                 Soldier mySoldier = new Soldier(envNode);
                                 mySoldier.ID = i;
                                 envNode.addAnt(mySoldier);
                             }
                             //50 forager ants
                             if(i>13 && i<64){
-                                //System.out.println("adding " + (i+1) + " forager ants");
+
                                 Foragers myForager = new Foragers(envNode);
                                 myForager.ID = i;
                                 envNode.addAnt(myForager);
@@ -109,8 +106,7 @@ public class Environment extends ColonyView{
                             myQueen.setIDcount(i);
                         }
 
-                        //System.out.println("ID of the square " + envNode.getID().substring(0,2));
-                        //envNode.updateEnvNode();
+
 
 
                     }
@@ -127,7 +123,7 @@ public class Environment extends ColonyView{
 
 
     public void turnUpdate(){
-        //System.out.println("turn has passed");
+
 
 
 
@@ -161,7 +157,6 @@ public class Environment extends ColonyView{
 
 
         if(myQueenNode.myQueen.LifeSpan==0 || myQueenNode.foodAmount==0){
-            System.out.println("That's it life is over queenie");
             myQueenNode.myQueen.setAlive(false);
         }
 

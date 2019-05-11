@@ -35,13 +35,13 @@ public class Ant {
     //	Methods
     //-------------------------------------------------------------------------
     public void move(){
-        System.out.println("its entering this instead ? ");
+
 
     }
 
     public void eat()
     {
-        System.out.println("Ant is eating...");
+
         currentLocation.setFoodAmount(currentLocation.foodAmount-1);
         if (currentLocation.foodAmount==0){
             Alive =false;

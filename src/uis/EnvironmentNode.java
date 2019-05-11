@@ -55,9 +55,6 @@ public class EnvironmentNode extends ColonyNodeView{
      * */
     public void addAnt(Ant myAnt){
 
-        //System.out.println("Entering AddAnt function");
-
-
 
         if(myAnt.getClass().getSimpleName().compareTo("Foragers")==0){
             this.foragerRoster.add(myAnt.ID, myAnt);
@@ -78,15 +75,6 @@ public class EnvironmentNode extends ColonyNodeView{
             this.showQueenIcon();
             //myAnt.Alive = true;
         }
-
-
-
-
-
-        //System.out.println("Forager roster size " + foragerRoster.size());
-        //System.out.println("Scout roster size " + scoutRoster.size());
-        //System.out.println("soldier roster size " + soldierRoster.size());
-        //System.out.println("Bala roster size " + balaRoster.size());
 
 
 
@@ -114,10 +102,7 @@ public class EnvironmentNode extends ColonyNodeView{
         this.setScoutCount(scoutRoster.size());
         this.setForagerCount(foragerRoster.size());
         this.setSoldierCount(soldierRoster.size());
-        //this.showSoldierIcon();
-        //this.showForagerIcon();
-        //this.showScoutIcon();
-        //this.showBalaIcon();
+
 
 
 
@@ -129,7 +114,7 @@ public class EnvironmentNode extends ColonyNodeView{
 
         //Every turn the Scouts ants get updated
         if(scoutRoster.size()>0){
-            //System.out.println("Entered show scout function");
+
 
             List scoutrosterList = scoutRoster.keyList();
             for(int i=0; i<scoutRoster.size(); i++){
@@ -147,7 +132,7 @@ public class EnvironmentNode extends ColonyNodeView{
 
         }
         else if (scoutRoster.size()==0){
-            //System.out.println("hidding SCOUT ==================================");
+
             this.hideScoutIcon();
         }
 
@@ -158,7 +143,7 @@ public class EnvironmentNode extends ColonyNodeView{
             //If there are any foragers ants then it enters this piece of code
             if(foragerRoster.size()>0){
                 this.showForagerIcon();
-                System.out.println("Entered show forager function");
+
                 //for every Forager ant in the roster
                 List foragerrosterList = foragerRoster.keyList();
                 for(int i=0; i<foragerrosterList.size(); i++){
@@ -167,7 +152,7 @@ public class EnvironmentNode extends ColonyNodeView{
                     //check for food and that is not the queen node
                     if(this.foodAmount>0 && (this.hasQueen==false))
                     {
-                        System.out.println("THERE IS FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOD HEERE");
+
                         //removes food from node
                         this.setFoodAmount(this.getFoodAmount()-1);
                         //sets foragemode off, so ant will return to nest
@@ -188,7 +173,7 @@ public class EnvironmentNode extends ColonyNodeView{
 
             }
             else if (foragerRoster.size()==0){
-                System.out.println("hidding FORAGER ==================================");
+
                 this.hideForagerIcon();
             }
         }
@@ -217,7 +202,7 @@ public class EnvironmentNode extends ColonyNodeView{
 
             }
 
-            //System.out.println("Entered show soldiers function");
+
         }
         else if (soldierRoster.size()==0){
 
@@ -259,15 +244,6 @@ public class EnvironmentNode extends ColonyNodeView{
          * END BALA MOVEMENT UPDATE
          * */
 
-
-
-
-
-
-//        if(myQueen.Alive){
-//            this.showQueenIcon();
-//            this.setQueen(true);
-//        }
 
     }
 

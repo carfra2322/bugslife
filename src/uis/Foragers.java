@@ -82,7 +82,7 @@ public class Foragers extends Ant {
         if(forageMode) {
             //if phermone levels are the same then randomly move
             if (!change) {
-                System.out.println("NO CHANGEEEEEE ==========================================================>");
+
                 int neighborsize = MainDriver.rand.nextInt(neighbors.size());
                 currentLocation.removeAnt(this);
                 lastLocation = currentLocation;
@@ -125,7 +125,7 @@ public class Foragers extends Ant {
         if(forageMode==false)
         {
 
-            System.out.println("=====================================================SI ENTRA AQUI" + countFood);
+
             //Checks if it is queen node
             if(currentLocation.getHasQueen()==false)
             {
@@ -138,7 +138,7 @@ public class Foragers extends Ant {
                 currentLocation = (EnvironmentNode) movementHistory.pop();
                 if(currentLocation.foodAmount>0) {
                     countFood = countFood + 1;
-                    System.out.println("=====================================================SI ENTRA AQUI KAREN" + countFood);
+
                 }
                 currentLocation.addAnt(this);
             }
@@ -146,7 +146,7 @@ public class Foragers extends Ant {
             //Then drop the food and go back to forage mode
             else if(currentLocation.hasQueen==true)
                 {
-                    System.out.println("=====================================================FOOD BACK TO QUEEEEENIE EL CONTEO DE COMIDA ES ESTEEEEEEEE FROY" + countFood);
+
                     currentLocation.environment.myQueenNode.setFoodAmount((currentLocation.getFoodAmount())+countFood);
 
                     this.setForageMode(true);
